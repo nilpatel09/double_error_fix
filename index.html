@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plant Cafe and Bar</title>
+<style>
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; color: #333; background-color: #f5f5f5; }
+  header { background-color: #6a994e; padding: 20px 40px; color: white; display: flex; justify-content: space-between; align-items: center; }
+  header a { color: #fff; text-decoration: none; margin: 0 15px; }
+  header a:hover { text-decoration: underline; }
+  .hero { position: relative; color: white; }
+  .hero img { width: 100%; height: 75vh; object-fit: cover; }
+  .hero-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+  .hero-text h1 { font-size: 2.5rem; }
+  .hero-text p { font-size: 1.2rem; }
+  button { background-color: #aacc96; border: none; padding: 10px 20px; cursor: pointer; color: white; margin-top: 20px; }
+  button:hover { background-color: #8e9945; }
+  .content-section { padding: 40px 20px; }
+  .content-section h2 { text-align: center; color: #6a994e; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+  .grid-item { background-color: #fff; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+  .special-offers { background-color: #e7f6d5; }
+  .footer { background-color: #333; color: white; text-align: center; padding: 20px; }
+  .footer a { color: #6a994e; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+  footer form { margin-top: 20px; }
+  input[type=email] { padding: 10px; margin-right: 10px; width: 200px; border: none; }
+  footer button { background-color: #6a994e; color: #fff; }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Plant Cafe and Bar Logo" style="width:100px;">
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <img src="cafe-hero.jpg" alt="Hero Image of Cafe">
+  <div class="hero-text">
+    <h1>Experience Nature at Plant Cafe and Bar</h1>
+    <p>Where every sip and bite is a delight.</p>
+    <button>Discover Menu</button>
+  </div>
+</div>
+
+<div class="featured-menu content-section">
+  <h2>Featured Menu Items</h2>
+  <div class="grid">
+    <!-- Example Item -->
+    <div class="grid-item">
+      <h3>Organic Avocado Toast</h3>
+      <p>Hearty avocado on our homemade bread.</p>
+    </div>
+    <div class="grid-item">
+      <h3>Green Detox Smoothie</h3>
+      <p>A refreshing blend of kale, spinach, and apple.</p>
+    </div>
+    <!-- Add more items -->
+  </div>
+</div>
+
+<div class="special-offers content-section">
+  <h2>Today's Specials</h2>
+  <!-- Specials go here; update daily or as needed -->
+  <p>Enjoy a 20% discount on all pastries today!</p>
+</div>
+
+<div class="about content-section">
+  <h2>Our Story</h2>
+  <p>Founded in 2020, Plant Cafe and Bar is dedicated to providing delicious and sustainable dining options in a cozy and welcoming environment.</p>
+</div>
+
+<div class="contact content-section">
+  <h2>Get in Touch</h2>
+  <!-- Update with your actual contact information -->
+  <p>Phone: (123) 456-7890</p>
+  <p>Email: hello@plantcafebar.com</p>
+  <p>Location: 123 Green St, Springfield</p>
+</div>
+
+<footer class="footer">
+  <p>Connect with us on social media</p>
+  <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+  <form>
+    <label for="emailNewsletter" style="display: none;">Subscribe to our newsletter</label>
+    <input type="email" id="emailNewsletter" name="email" placeholder="Subscribe to our newsletter" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</footer>
+
+</body>
+</html>
